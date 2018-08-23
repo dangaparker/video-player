@@ -33,6 +33,9 @@ export default class App extends Component {
   render() {
     return (
       <div>
+      
+          <h1 className="title">Video App</h1>
+      
       <SearchBar onSearchTermChange={term => this.videoSearch(term)}/>
       <VideoDetail video={this.state.selectedVideo}/>
       <VideoList 
